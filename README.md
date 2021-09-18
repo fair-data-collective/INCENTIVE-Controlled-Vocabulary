@@ -1,11 +1,13 @@
-[![CI](https://github.com/fair-data-collective/internal-m4m/workflows/Sheet2RDF/badge.svg)](https://github.com/fair-data-collective/internal-m4m/actions?query=workflow%3ASheet2RDF)
+<img src="https://zenodo.org/api/files/00000000-0000-0000-0000-000000000000/incentive/logo.jpg" alt="incentive logo" width="300"/>
 
-# [Stanford Intern Beer Ontology](http://purl.org/m4m/beer-ontology/)
-Controlled vocabularies allow an accurate and controlled approach in describing physical and digital assets (e.g., data). One of such controlled vocabulary is **Beer Ontology**. This controlled vocabulary is a result of internal Metadata 4 Machine (M4M) Workshop provided to the Stanford intern. 
+[![CI](https://github.com/fair-data-collective/M4M18-vocabulary/workflows/Sheet2RDF/badge.svg)](https://github.com/fair-data-collective/M4M18-vocabulary/actions?query=workflow%3ASheet2RDF)
 
-`sheet2rdf` and `OntoStack`, developed by [FAIR Data Collective](https://dk.linkedin.com/company/fair-data-collective), are used to build and serve **ZonMw Generic Controlled Vocabulary**, while [PURL](https://archive.org/services/purl/) is used to persist identifiers for the vocabulary terms and properties:
+# [INCENTIVE Variables Controlled Vocabulary](http://purl.org/incentive/variables/)
+Controlled vocabularies allow an accurate and controlled approach in describing physical and digital assets (e.g., data). One of such controlled vocabulary is **INCENTIVE Variables**. This controlled vocabulary is a result of Metadata 4 Machine (M4M) Workshop 18 (M4M.18) provided to [the INCENTIVE community](https://zenodo.org/communities/incentive/about/). 
 
-   http://purl.org/m4m/beer-ontology/
+`sheet2rdf` and `OntoStack`, developed by [FAIR Data Collective](https://dk.linkedin.com/company/fair-data-collective), are used to build and serve **INCENTIVE Variable**, while [PURL](https://archive.org/services/purl/) is used to persist identifiers for the vocabulary terms and properties:
+
+   http://purl.org/incentive/variables/
 
 
 # Tooling

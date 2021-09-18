@@ -19,7 +19,6 @@
   skos:topConceptOf <http://purl.org/incentive/variables/> .
 
 incentive-vars:AtmosphericParameter a skos:Concept;
-  skos:closeMatch <http://purl.org/aspect/EnviromentalConditionTerms>;
   skos:definition "This is a parent concept containing controlled terms representing to the atmospheric variables."@en;
   skos:inScheme <http://purl.org/incentive/variables/>;
   skos:narrower incentive-vars:wind_speed;
@@ -30,6 +29,6 @@ incentive-vars:wind_speed a skos:Concept;
   dct:creator <https://orcid.org/0000-0002-9381-9693>;
   qudt:unit unit:M-PER-SEC;
   skos:broader incentive-vars:AtmosphericParameter;
-  skos:exactMatch <http://purl.org/aspect/wind_speed>;
+  skos:exactMatch <https://mmisw.org/ont/cf/parameter/wind_speed>;
   skos:inScheme <http://purl.org/incentive/variables/>;
   skos:prefLabel "wind_speed"@en .

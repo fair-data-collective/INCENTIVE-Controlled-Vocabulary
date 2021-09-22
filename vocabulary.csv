@@ -28,16 +28,17 @@ pav:createdOn,2021-08-23T18:13+02:00,Date when vocabulary was initially created
 pav:lastUpdatedOn,2021-09-22T14:00+02:00,Date of the last vocabulary update
 Definition of terms
 
-Identifier,skos:prefLabel@en,qudt:unit,"skos:altLabel(separator="","")",skos:definition@en,"dct:source(separator="","")","skos:broader(separator="","")","skos:exactMatch(separator="","")","skos:closeMatch(separator="","")",skos:editorialNote@en,"dct:creator(separator="","")","dct:contributor(separator="","")"
-incentive-vars:AtmosphericParameter,Atmospheric Parameter,,,This is a parent concept containing controlled terms representing to the atmospheric variables.
-incentive-vars:wind_speed,wind_speed,unit:M-PER-SEC,,,,incentive-vars:AtmosphericParameter,https://mmisw.org/ont/cf/parameter/wind_speed,,,https://orcid.org/0000-0002-9381-9693
-incentive-vars:
-incentive-vars:
-incentive-vars:
-incentive-vars:
-incentive-vars:
-incentive-vars:
-incentive-vars:
+Identifier,skos:prefLabel@en,"qudt:unit(separator="","")","skos:altLabel(separator="","")",skos:definition@en,"dct:source(separator="","")","skos:broader(separator="","")","skos:exactMatch(separator="","")","skos:closeMatch(separator="","")",skos:editorialNote@en,"dct:creator(separator="","")","dct:contributor(separator="","")"
+incentive-vars:IgGSubclasses,IgG Subclasses,MFI,,levels of IgG subclasses to Flu antigens,,,,,,https://orcid.org/0000-0003-3277-3107
+incentive-vars:IgG1-HA1,IgG1-HA1,MFI,,levels of immunoglobulin G-1against HA-1 antigen,,incentive-vars:IgGSubclasses,,,,https://orcid.org/0000-0003-3277-3107
+incentive-vars:IgG2-HA1,IgG2-HA1,MFI,,levels of immunoglobulin G-2 against HA-1 antigen,,incentive-vars:IgGSubclasses,,,,https://orcid.org/0000-0003-3277-3107
+incentive-vars:IgG3-HA1,IgG3-HA1,MFI,,levels of immunoglobulin G-3 against HA-1 antigen,,incentive-vars:IgGSubclasses,,,,https://orcid.org/0000-0003-3277-3107
+incentive-vars:IgG4-HA1,IgG4-HA1,MFI,,levels of immunoglobulin G-4 against HA-1 antigen,,incentive-vars:IgGSubclasses,,,,https://orcid.org/0000-0003-3277-3107
+incentive-vars:SurfaceAntigens-FC,Surface Antigens-FC,"MFI,%",,level of surface antigenexpression
+incentive-vars:CD3,CD3,"MFI,%",,level of CD3 expression,,incentive-vars:SurfaceAntigens-FC
+incentive-vars:Cytokines-FC,Cytokines-FC,"MFI,%",,level of cytokine expreesion/secretion
+incentive-vars:IFNg,IFNg,"MFI,%",,level of IFNg expression/secretion,,incentive-vars:Cytokines
+incentive-vars:Chemokines-FC,Chemokines-FC,"MFI,%",,level of chemokine expression
 incentive-vars:
 incentive-vars:
 incentive-vars:

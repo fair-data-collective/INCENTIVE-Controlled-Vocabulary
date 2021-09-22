@@ -1,10 +1,24 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix incentive-vars: <http://purl.org/incentive/variables/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
 @prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://purl.org/incentive/variables/> a skos:Concept, skos:ConceptScheme;
   dct:creator <https://orcid.org/0000-0001-5323-3180>, <https://orcid.org/0000-0001-6796-6780>,
@@ -19,21 +33,87 @@
   pav:createdOn "2021-08-23T18:13+02:00"@en;
   pav:lastUpdatedOn "2021-09-22T14:00+02:00"@en;
   pav:version "0.1.1"@en;
-  skos:hasTopConcept <http://purl.org/incentive/variables/>, incentive-vars:AtmosphericParameter;
+  skos:hasTopConcept <http://purl.org/incentive/variables/>, incentive-vars:Chemokines-FC,
+    incentive-vars:Cytokines-FC, incentive-vars:IgGSubclasses, incentive-vars:SurfaceAntigens-FC;
   skos:inScheme <http://purl.org/incentive/variables/>;
   skos:topConceptOf <http://purl.org/incentive/variables/> .
 
-incentive-vars:AtmosphericParameter a skos:Concept;
-  skos:definition "This is a parent concept containing controlled terms representing to the atmospheric variables."@en;
+incentive-vars:IgGSubclasses a skos:Concept;
+  dct:creator <https://orcid.org/0000-0003-3277-3107>;
+  qudt:unit "MFI"@en;
+  skos:definition "levels of IgG subclasses to Flu antigens"@en;
   skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:narrower incentive-vars:wind_speed;
-  skos:prefLabel "Atmospheric Parameter"@en;
+  skos:narrower incentive-vars:IgG1-HA1, incentive-vars:IgG2-HA1, incentive-vars:IgG3-HA1,
+    incentive-vars:IgG4-HA1;
+  skos:prefLabel "IgG Subclasses"@en;
   skos:topConceptOf <http://purl.org/incentive/variables/> .
 
-incentive-vars:wind_speed a skos:Concept;
-  dct:creator <https://orcid.org/0000-0002-9381-9693>;
-  qudt:unit unit:M-PER-SEC;
-  skos:broader incentive-vars:AtmosphericParameter;
-  skos:exactMatch <https://mmisw.org/ont/cf/parameter/wind_speed>;
+incentive-vars:IgG1-HA1 a skos:Concept;
+  dct:creator <https://orcid.org/0000-0003-3277-3107>;
+  qudt:unit "MFI"@en;
+  skos:broader incentive-vars:IgGSubclasses;
+  skos:definition "levels of immunoglobulin G-1against HA-1 antigen"@en;
   skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:prefLabel "wind_speed"@en .
+  skos:prefLabel "IgG1-HA1"@en .
+
+incentive-vars:IgG2-HA1 a skos:Concept;
+  dct:creator <https://orcid.org/0000-0003-3277-3107>;
+  qudt:unit "MFI"@en;
+  skos:broader incentive-vars:IgGSubclasses;
+  skos:definition "levels of immunoglobulin G-2 against HA-1 antigen"@en;
+  skos:inScheme <http://purl.org/incentive/variables/>;
+  skos:prefLabel "IgG2-HA1"@en .
+
+incentive-vars:IgG3-HA1 a skos:Concept;
+  dct:creator <https://orcid.org/0000-0003-3277-3107>;
+  qudt:unit "MFI"@en;
+  skos:broader incentive-vars:IgGSubclasses;
+  skos:definition "levels of immunoglobulin G-3 against HA-1 antigen"@en;
+  skos:inScheme <http://purl.org/incentive/variables/>;
+  skos:prefLabel "IgG3-HA1"@en .
+
+incentive-vars:IgG4-HA1 a skos:Concept;
+  dct:creator <https://orcid.org/0000-0003-3277-3107>;
+  qudt:unit "MFI"@en;
+  skos:broader incentive-vars:IgGSubclasses;
+  skos:definition "levels of immunoglobulin G-4 against HA-1 antigen"@en;
+  skos:inScheme <http://purl.org/incentive/variables/>;
+  skos:prefLabel "IgG4-HA1"@en .
+
+incentive-vars:SurfaceAntigens-FC a skos:Concept;
+  qudt:unit "%"@en, "MFI"@en;
+  skos:definition "level of surface antigenexpression"@en;
+  skos:inScheme <http://purl.org/incentive/variables/>;
+  skos:narrower incentive-vars:CD3;
+  skos:prefLabel "Surface Antigens-FC"@en;
+  skos:topConceptOf <http://purl.org/incentive/variables/> .
+
+incentive-vars:CD3 a skos:Concept;
+  qudt:unit "%"@en, "MFI"@en;
+  skos:broader incentive-vars:SurfaceAntigens-FC;
+  skos:definition "level of CD3 expression"@en;
+  skos:inScheme <http://purl.org/incentive/variables/>;
+  skos:prefLabel "CD3"@en .
+
+incentive-vars:Cytokines-FC a skos:Concept;
+  qudt:unit "%"@en, "MFI"@en;
+  skos:definition "level of cytokine expreesion/secretion"@en;
+  skos:inScheme <http://purl.org/incentive/variables/>;
+  skos:prefLabel "Cytokines-FC"@en;
+  skos:topConceptOf <http://purl.org/incentive/variables/> .
+
+incentive-vars:IFNg a skos:Concept;
+  qudt:unit "%"@en, "MFI"@en;
+  skos:broader incentive-vars:Cytokines;
+  skos:definition "level of IFNg expression/secretion"@en;
+  skos:inScheme <http://purl.org/incentive/variables/>;
+  skos:prefLabel "IFNg"@en .
+
+incentive-vars:Chemokines-FC a skos:Concept;
+  qudt:unit "%"@en, "MFI"@en;
+  skos:definition "level of chemokine expression"@en;
+  skos:inScheme <http://purl.org/incentive/variables/>;
+  skos:prefLabel "Chemokines-FC"@en;
+  skos:topConceptOf <http://purl.org/incentive/variables/> .
+
+incentive-vars:Cytokines skos:narrower incentive-vars:IFNg .

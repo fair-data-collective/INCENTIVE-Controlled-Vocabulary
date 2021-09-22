@@ -7,13 +7,18 @@
 @prefix unit: <http://qudt.org/vocab/unit/> .
 
 <http://purl.org/incentive/variables/> a skos:Concept, skos:ConceptScheme;
-  dct:creator <https://orcid.org/0000-0002-9381-9693>;
-  dct:description "Quantitative and qualitative and quantitative variables describing ..."@en;
+  dct:creator <https://orcid.org/0000-0001-5323-3180>, <https://orcid.org/0000-0001-6796-6780>,
+    <https://orcid.org/0000-0001-8888-635X>, <https://orcid.org/0000-0002-5914-3554>,
+    <https://orcid.org/0000-0002-8954-0470>, <https://orcid.org/0000-0002-9346-0190>,
+    <https://orcid.org/0000-0002-9381-9693>, <https://orcid.org/0000-0002-9432-4297>,
+    <https://orcid.org/0000-0002-9719-9161>, <https://orcid.org/0000-0003-1352-9213>,
+    <https://orcid.org/0000-0003-3277-3107>, <https://orcid.org/0000-0003-4645-9442>;
+  dct:description "Quantitative and qualitative variables describing ..."@en;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "INCENTIVE Project Variables"@en;
   pav:createdOn "2021-08-23T18:13+02:00"@en;
-  pav:lastUpdatedOn "2021-08-24T09:33+02:00"@en;
-  pav:version "0.1.0"@en;
+  pav:lastUpdatedOn "2021-09-22T14:00+02:00"@en;
+  pav:version "0.1.1"@en;
   skos:hasTopConcept <http://purl.org/incentive/variables/>, incentive-vars:AtmosphericParameter;
   skos:inScheme <http://purl.org/incentive/variables/>;
   skos:topConceptOf <http://purl.org/incentive/variables/> .

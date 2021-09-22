@@ -9,17 +9,58 @@ PREFIX,unit,http://qudt.org/vocab/unit/,"Prefix for QUDT Vocabulary of Units whi
 Metadata about vocabulary
 
 dct:title,INCENTIVE Project Variables,Title of the vocabulary
-dct:description,Quantitative and qualitative and quantitative variables describing ...,Description of the controlled vocabulary
+dct:description,Quantitative and qualitative variables describing ...,Description of the controlled vocabulary
 dct:creator,https://orcid.org/0000-0002-9381-9693,An ORCID ID of the vocabulary creator
+dct:creator,https://orcid.org/0000-0003-3277-3107,An ORCID ID of the vocabulary creator
+dct:creator,https://orcid.org/0000-0003-4645-9442,An ORCID ID of the vocabulary creator
+dct:creator,https://orcid.org/0000-0002-9719-9161,An ORCID ID of the vocabulary creator
+dct:creator,https://orcid.org/0000-0002-9346-0190,An ORCID ID of the vocabulary creator
+dct:creator,https://orcid.org/0000-0002-8954-0470,An ORCID ID of the vocabulary creator
+dct:creator,https://orcid.org/0000-0001-8888-635X,An ORCID ID of the vocabulary creator
+dct:creator,https://orcid.org/0000-0003-1352-9213,An ORCID ID of the vocabulary creator
+dct:creator,https://orcid.org/0000-0001-6796-6780,An ORCID ID of the vocabulary creator
+dct:creator,https://orcid.org/0000-0002-9432-4297,An ORCID ID of the vocabulary creator
+dct:creator,https://orcid.org/0000-0002-5914-3554,An ORCID ID of the vocabulary creator
+dct:creator,https://orcid.org/0000-0001-5323-3180,An ORCID ID of the vocabulary creator
 dct:rights,https://spdx.org/licenses/CC0-1.0,License under which the vocabulary is provided
-pav:version,0.1.0,Vocabulary version
+pav:version,0.1.1,Vocabulary version
 pav:createdOn,2021-08-23T18:13+02:00,Date when vocabulary was initially created
-pav:lastUpdatedOn,2021-08-24T09:33+02:00,Date of the last vocabulary update
+pav:lastUpdatedOn,2021-09-22T14:00+02:00,Date of the last vocabulary update
 Definition of terms
 
 Identifier,skos:prefLabel@en,qudt:unit,"skos:altLabel(separator="","")",skos:definition@en,"dct:source(separator="","")","skos:broader(separator="","")","skos:exactMatch(separator="","")","skos:closeMatch(separator="","")",skos:editorialNote@en,"dct:creator(separator="","")","dct:contributor(separator="","")"
 incentive-vars:AtmosphericParameter,Atmospheric Parameter,,,This is a parent concept containing controlled terms representing to the atmospheric variables.
 incentive-vars:wind_speed,wind_speed,unit:M-PER-SEC,,,,incentive-vars:AtmosphericParameter,https://mmisw.org/ont/cf/parameter/wind_speed,,,https://orcid.org/0000-0002-9381-9693
+incentive-vars:
+incentive-vars:
+incentive-vars:
+incentive-vars:
+incentive-vars:
+incentive-vars:
+incentive-vars:
+incentive-vars:
+incentive-vars:
+incentive-vars:
+incentive-vars:
+incentive-vars:
+incentive-vars:
+incentive-vars:
+incentive-vars:
+incentive-vars:
+incentive-vars:
+incentive-vars:
+incentive-vars:
+incentive-vars:
+incentive-vars:
+incentive-vars:
+incentive-vars:
+incentive-vars:
+incentive-vars:
+incentive-vars:
+incentive-vars:
+incentive-vars:
+incentive-vars:
+incentive-vars:
 incentive-vars:
 incentive-vars:
 incentive-vars:

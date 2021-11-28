@@ -5,7 +5,7 @@
 # [INCENTIVE Variables Controlled Vocabulary](http://purl.org/incentive/variables/)
 Controlled vocabularies allow an accurate and controlled approach in describing physical and digital assets (e.g., data). One of such controlled vocabulary is **INCENTIVE Variables**. This controlled vocabulary is a result of Metadata 4 Machine (M4M) Workshop 18 (M4M.18) provided to [the INCENTIVE community](https://zenodo.org/communities/incentive/about/). 
 
-`sheet2rdf` and `OntoStack`, developed by [FAIR Data Collective](https://dk.linkedin.com/company/fair-data-collective), are used to build and serve **INCENTIVE Variable**, while [PURL](https://archive.org/services/purl/), which once configured, will be used to persist identifiers for the vocabulary terms and properties:
+`sheet2rdf` and `OntoStack`, developed by Nikola Vasiljevic, are used to build and serve **INCENTIVE Variable**, while [PURL](https://archive.org/services/purl/), which once configured, will be used to persist identifiers for the vocabulary terms and properties:
 
    http://purl.org/incentive/variables/
 

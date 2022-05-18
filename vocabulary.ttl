@@ -34,7 +34,8 @@
   pav:lastUpdatedOn "2021-09-22T14:00+02:00"@en;
   pav:version "0.1.1"@en;
   skos:hasTopConcept <http://purl.org/incentive/variables/>, incentive-vars:Chemokines-FC,
-    incentive-vars:Cytokines-FC, incentive-vars:IgGSubclasses, incentive-vars:SurfaceAntigens-FC;
+    incentive-vars:Cytokines-FC, incentive-vars:IgGSubclasses, incentive-vars:SurfaceAntigens-FC,
+    incentive-vars:test;
   skos:inScheme <http://purl.org/incentive/variables/>;
   skos:topConceptOf <http://purl.org/incentive/variables/> .
 
@@ -114,6 +115,11 @@ incentive-vars:Chemokines-FC a skos:Concept;
   skos:definition "level of chemokine expression"@en;
   skos:inScheme <http://purl.org/incentive/variables/>;
   skos:prefLabel "Chemokines-FC"@en;
+  skos:topConceptOf <http://purl.org/incentive/variables/> .
+
+incentive-vars:test a skos:Concept;
+  skos:inScheme <http://purl.org/incentive/variables/>;
+  skos:prefLabel "test"@en;
   skos:topConceptOf <http://purl.org/incentive/variables/> .
 
 incentive-vars:Cytokines skos:narrower incentive-vars:IFNg .

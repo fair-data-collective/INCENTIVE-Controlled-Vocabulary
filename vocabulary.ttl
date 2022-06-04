@@ -106,7 +106,7 @@ sosa:madeBySensor
     <https://orcid.org/0000-0003-3277-3107>, <https://orcid.org/0000-0003-4645-9442>;
   dct:description "Quantitative and qualitative variables describing ..."@en;
   dct:hasVersion "0.1.1"@en;
-  dct:modified "2022-06-04T10:57:00+00:00"@en;
+  dct:modified "2022-06-04T11:12:52+00:00"@en;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "INCENTIVE Project Variables"@en;
   skos:hasTopConcept incentive-vars:1000, incentive-vars:1005, incentive-vars:1007,
@@ -121,78 +121,86 @@ sosa:madeBySensor
 
 incentive-vars:1000 a skos:Concept;
   dct:creator <https://orcid.org/0000-0003-3277-3107>;
-  qudt:unit "MFI"@en;
   skos:definition "levels of IgG subclasses to Flu antigens"@en;
   skos:inScheme <http://purl.org/incentive/variables/>;
   skos:prefLabel "IgG Subclasses"@en;
-  skos:topConceptOf <http://purl.org/incentive/variables/> .
+  skos:topConceptOf <http://purl.org/incentive/variables/>;
+  sosa:madeBySensor "\")"@en, <http://www.w3.org/ns/sosa/madeBySensor(separator=\u0022>;
+  <https://w3id.org/env/puvstatistic> "\")"@en, <https://w3id.org/env/puvstatistic(separator=\u0022>;
+  <https://w3id.org/env/puvuom> "MFI"@en;
+  <https://w3id.org/env/puvusesMethod> "\")"@en, <https://w3id.org/env/puvusesMethod(separator=\u0022>;
+  iop:hasConstraint "\")"@en, <https://w3id.org/iadopt/ont/hasConstraint(separator=\u0022>;
+  iop:hasContextObject "\")"@en, <https://w3id.org/iadopt/ont/hasContextObject(separator=\u0022>;
+  iop:hasMatrix iop:hasMatrix;
+  iop:hasObjectOfInterest iop:hasObjectOfInterest;
+  iop:hasProperty iop:hasProperty .
 
 incentive-vars:1001 a skos:Concept;
   dct:creator <https://orcid.org/0000-0003-3277-3107>;
-  qudt:unit "MFI"@en;
   skos:broader incentive-vars:IgGSubclasses;
   skos:definition "levels of immunoglobulin G-1against HA-1 antigen"@en;
   skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:prefLabel "IgG1-HA1"@en .
+  skos:prefLabel "IgG1-HA1"@en;
+  <https://w3id.org/env/puvuom> "MFI"@en .
 
 incentive-vars:1002 a skos:Concept;
   dct:creator <https://orcid.org/0000-0003-3277-3107>;
-  qudt:unit "MFI"@en;
   skos:broader incentive-vars:IgGSubclasses;
   skos:definition "levels of immunoglobulin G-2 against HA-1 antigen"@en;
   skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:prefLabel "IgG2-HA1"@en .
+  skos:prefLabel "IgG2-HA1"@en;
+  <https://w3id.org/env/puvuom> "MFI"@en .
 
 incentive-vars:1003 a skos:Concept;
   dct:creator <https://orcid.org/0000-0003-3277-3107>;
-  qudt:unit "MFI"@en;
   skos:broader incentive-vars:IgGSubclasses;
   skos:definition "levels of immunoglobulin G-3 against HA-1 antigen"@en;
   skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:prefLabel "IgG3-HA1"@en .
+  skos:prefLabel "IgG3-HA1"@en;
+  <https://w3id.org/env/puvuom> "MFI"@en .
 
 incentive-vars:1004 a skos:Concept;
   dct:creator <https://orcid.org/0000-0003-3277-3107>;
-  qudt:unit "MFI"@en;
   skos:broader incentive-vars:IgGSubclasses;
   skos:definition "levels of immunoglobulin G-4 against HA-1 antigen"@en;
   skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:prefLabel "IgG4-HA1"@en .
+  skos:prefLabel "IgG4-HA1"@en;
+  <https://w3id.org/env/puvuom> "MFI"@en .
 
 incentive-vars:1005 a skos:Concept;
-  qudt:unit "%"@en, "MFI"@en;
   skos:definition "level of surface antigenexpression"@en;
   skos:inScheme <http://purl.org/incentive/variables/>;
   skos:prefLabel "Surface Antigens-FC"@en;
-  skos:topConceptOf <http://purl.org/incentive/variables/> .
+  skos:topConceptOf <http://purl.org/incentive/variables/>;
+  <https://w3id.org/env/puvuom> "%"@en, "MFI"@en .
 
 incentive-vars:1006 a skos:Concept;
-  qudt:unit "%"@en, "MFI"@en;
   skos:broader incentive-vars:SurfaceAntigens-FC;
   skos:definition "level of CD3 expression"@en;
   skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:prefLabel "CD3"@en .
+  skos:prefLabel "CD3"@en;
+  <https://w3id.org/env/puvuom> "%"@en, "MFI"@en .
 
 incentive-vars:1007 a skos:Concept;
-  qudt:unit "%"@en, "MFI"@en;
   skos:definition "level of cytokine expreesion/secretion"@en;
   skos:inScheme <http://purl.org/incentive/variables/>;
   skos:prefLabel "Cytokines-FC"@en;
-  skos:topConceptOf <http://purl.org/incentive/variables/> .
+  skos:topConceptOf <http://purl.org/incentive/variables/>;
+  <https://w3id.org/env/puvuom> "%"@en, "MFI"@en .
 
 incentive-vars:1008 a skos:Concept;
-  qudt:unit "%"@en, "MFI"@en;
   skos:broader incentive-vars:Cytokines;
   skos:definition "level of IFNg expression/secretion"@en;
   skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:prefLabel "IFNg"@en .
+  skos:prefLabel "IFNg"@en;
+  <https://w3id.org/env/puvuom> "%"@en, "MFI"@en .
 
 incentive-vars:1009 a skos:Concept;
-  qudt:unit "%"@en, "MFI"@en;
   skos:definition "level of chemokine expression"@en;
   skos:inScheme <http://purl.org/incentive/variables/>;
   skos:prefLabel "Chemokines-FC"@en;
-  skos:topConceptOf <http://purl.org/incentive/variables/> .
+  skos:topConceptOf <http://purl.org/incentive/variables/>;
+  <https://w3id.org/env/puvuom> "%"@en, "MFI"@en .
 
 incentive-vars:1010 a skos:Concept;
   skos:inScheme <http://purl.org/incentive/variables/>;

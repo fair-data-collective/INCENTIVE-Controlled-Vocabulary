@@ -21,6 +21,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://purl.org/incentive/variables/> a skos:ConceptScheme;
+  dct:created "2021-08-23T16:13+00:00"@en;
   dct:creator <https://orcid.org/0000-0001-5323-3180>, <https://orcid.org/0000-0001-6796-6780>,
     <https://orcid.org/0000-0001-8888-635X>, <https://orcid.org/0000-0002-5914-3554>,
     <https://orcid.org/0000-0002-8954-0470>, <https://orcid.org/0000-0002-9346-0190>,
@@ -29,6 +30,7 @@
     <https://orcid.org/0000-0003-3277-3107>, <https://orcid.org/0000-0003-4645-9442>;
   dct:description "Quantitative and qualitative variables describing ..."@en;
   dct:hasVersion "0.1.1"@en;
+  dct:modified "2022-06-04T10:08:26+00:00"@en;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "INCENTIVE Project Variables"@en;
   skos:hasTopConcept incentive-vars:1000, incentive-vars:1005, incentive-vars:1007,

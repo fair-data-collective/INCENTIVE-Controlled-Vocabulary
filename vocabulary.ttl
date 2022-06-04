@@ -106,7 +106,7 @@ sosa:madeBySensor
     <https://orcid.org/0000-0003-3277-3107>, <https://orcid.org/0000-0003-4645-9442>;
   dct:description "Quantitative and qualitative variables describing ..."@en;
   dct:hasVersion "0.1.1"@en;
-  dct:modified "2022-06-04T11:12:52+00:00"@en;
+  dct:modified "2022-06-04T11:15:15+00:00"@en;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "INCENTIVE Project Variables"@en;
   skos:hasTopConcept incentive-vars:1000, incentive-vars:1005, incentive-vars:1007,
@@ -124,7 +124,14 @@ incentive-vars:1000 a skos:Concept;
   skos:definition "levels of IgG subclasses to Flu antigens"@en;
   skos:inScheme <http://purl.org/incentive/variables/>;
   skos:prefLabel "IgG Subclasses"@en;
-  skos:topConceptOf <http://purl.org/incentive/variables/>;
+  skos:topConceptOf <http://purl.org/incentive/variables/> .
+
+incentive-vars:1001 a skos:Concept;
+  dct:creator <https://orcid.org/0000-0003-3277-3107>;
+  skos:broader incentive-vars:IgGSubclasses;
+  skos:definition "levels of immunoglobulin G-1against HA-1 antigen"@en;
+  skos:inScheme <http://purl.org/incentive/variables/>;
+  skos:prefLabel "IgG1-HA1"@en;
   sosa:madeBySensor "\")"@en, <http://www.w3.org/ns/sosa/madeBySensor(separator=\u0022>;
   <https://w3id.org/env/puvstatistic> "\")"@en, <https://w3id.org/env/puvstatistic(separator=\u0022>;
   <https://w3id.org/env/puvuom> "MFI"@en;
@@ -134,14 +141,6 @@ incentive-vars:1000 a skos:Concept;
   iop:hasMatrix iop:hasMatrix;
   iop:hasObjectOfInterest iop:hasObjectOfInterest;
   iop:hasProperty iop:hasProperty .
-
-incentive-vars:1001 a skos:Concept;
-  dct:creator <https://orcid.org/0000-0003-3277-3107>;
-  skos:broader incentive-vars:IgGSubclasses;
-  skos:definition "levels of immunoglobulin G-1against HA-1 antigen"@en;
-  skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:prefLabel "IgG1-HA1"@en;
-  <https://w3id.org/env/puvuom> "MFI"@en .
 
 incentive-vars:1002 a skos:Concept;
   dct:creator <https://orcid.org/0000-0003-3277-3107>;
@@ -172,7 +171,7 @@ incentive-vars:1005 a skos:Concept;
   skos:inScheme <http://purl.org/incentive/variables/>;
   skos:prefLabel "Surface Antigens-FC"@en;
   skos:topConceptOf <http://purl.org/incentive/variables/>;
-  <https://w3id.org/env/puvuom> "%"@en, "MFI"@en .
+  <https://w3id.org/env/puvuom> "MFI"@en .
 
 incentive-vars:1006 a skos:Concept;
   skos:broader incentive-vars:SurfaceAntigens-FC;
@@ -205,7 +204,8 @@ incentive-vars:1009 a skos:Concept;
 incentive-vars:1010 a skos:Concept;
   skos:inScheme <http://purl.org/incentive/variables/>;
   skos:prefLabel "test"@en;
-  skos:topConceptOf <http://purl.org/incentive/variables/> .
+  skos:topConceptOf <http://purl.org/incentive/variables/>;
+  <https://w3id.org/env/puvuom> "%"@en, "MFI"@en .
 
 incentive-vars:1011 a skos:Concept;
   skos:inScheme <http://purl.org/incentive/variables/>;

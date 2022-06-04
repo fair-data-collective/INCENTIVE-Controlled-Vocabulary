@@ -31,7 +31,7 @@ dct:creator,https://orcid.org/0000-0001-5323-3180,An ORCID ID of the vocabulary 
 dct:rights,https://spdx.org/licenses/CC0-1.0,License under which the vocabulary is provided
 dct:hasVersion,0.1.1,Vocabulary version
 dct:created,2021-08-23T16:13+00:00,Date when vocabulary was initially created
-dct:modified,2022-06-04T10:17:05+00:00,Automatic update when vocabulary is updated
+dct:modified,2022-06-04T10:57:00+00:00,Automatic update when vocabulary is updated
 Definition of terms
 
 Identifier,skos:prefLabel@en,"qudt:unit(separator="","")","skos:altLabel(separator="","")",skos:definition@en,"dct:source(separator="","")","skos:broader(separator="","")","skos:exactMatch(separator="","")","skos:closeMatch(separator="","")",skos:editorialNote@en,"dct:creator(separator="","")","dct:contributor(separator="","")"

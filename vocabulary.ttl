@@ -28,11 +28,9 @@
     <https://orcid.org/0000-0002-9719-9161>, <https://orcid.org/0000-0003-1352-9213>,
     <https://orcid.org/0000-0003-3277-3107>, <https://orcid.org/0000-0003-4645-9442>;
   dct:description "Quantitative and qualitative variables describing ..."@en;
+  dct:hasVersion "0.1.1"@en;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "INCENTIVE Project Variables"@en;
-  pav:createdOn "2021-08-23T18:13+02:00"@en;
-  pav:lastUpdatedOn "2021-09-22T14:00+02:00"@en;
-  pav:version "0.1.1"@en;
   skos:hasTopConcept incentive-vars:1000, incentive-vars:1005, incentive-vars:1007,
     incentive-vars:1009, incentive-vars:1010, incentive-vars:1011, incentive-vars:1012,
     incentive-vars:1013, incentive-vars:1014, incentive-vars:1015, incentive-vars:1016,

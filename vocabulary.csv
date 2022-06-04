@@ -4,12 +4,18 @@ PREFIX,incentive-vars,http://purl.org/incentive/variables/,Prefix for our contro
 PREFIX,skos,http://www.w3.org/2004/02/skos/core#,Prefix for SKOS Onotlogy is which our base for defining SKOS based controlled vocabulary
 PREFIX,pav,http://purl.org/pav/ ,"Prefix for Provenance, Authoring and Versioning Onotlogy which properties such as version and createdOn we will use to describe our controlled vocabulary"
 PREFIX,dct,http://purl.org/dc/terms/ ,"Prefix for Dublin Core (Terms) Ontology which properties such as title, description, rights, source, etc. we will use to describe our controlled vocabulary as well to define its terms"
+PREFIX,iop,https://w3id.org/iadopt/ont/,I-ADOPT Ontology
+PREFIX,puv,https://w3id.org/env/puv,"A simple ontology which implements the Parameter Usage 
+Vocabulary semantic model, as described at 
+https://github.com/nvs-vocabs/P01."
+PREFIX,sosa,http://www.w3.org/ns/sosa/,Semantic Sensor Network Ontology
 PREFIX,qudt,http://qudt.org/schema/qudt/,"Prefix for ""Quantity, Unit, Dimension and Type"" schema that is used to model physical units."
 PREFIX,unit,http://qudt.org/vocab/unit/,"Prefix for QUDT Vocabulary of Units which terms we will use to semantically define units of measurements for terms (i.e., variables) we are defining "
 Metadata about vocabulary
 
 dct:title,INCENTIVE Project Variables,Title of the vocabulary
 dct:description,Quantitative and qualitative variables describing ...,Description of the controlled vocabulary
+foaf:homepage,https://zenodo.org/communities/incentive/about/ ,Home page of community creating vocabulary
 dct:creator,https://orcid.org/0000-0002-9381-9693,An ORCID ID of the vocabulary creator
 dct:creator,https://orcid.org/0000-0003-3277-3107,An ORCID ID of the vocabulary creator
 dct:creator,https://orcid.org/0000-0003-4645-9442,An ORCID ID of the vocabulary creator
@@ -25,7 +31,7 @@ dct:creator,https://orcid.org/0000-0001-5323-3180,An ORCID ID of the vocabulary 
 dct:rights,https://spdx.org/licenses/CC0-1.0,License under which the vocabulary is provided
 dct:hasVersion,0.1.1,Vocabulary version
 dct:created,2021-08-23T16:13+00:00,Date when vocabulary was initially created
-dct:modified,2022-06-04T10:08:26+00:00,Automatic update when vocabulary is updated
+dct:modified,2022-06-04T10:17:05+00:00,Automatic update when vocabulary is updated
 Definition of terms
 
 Identifier,skos:prefLabel@en,"qudt:unit(separator="","")","skos:altLabel(separator="","")",skos:definition@en,"dct:source(separator="","")","skos:broader(separator="","")","skos:exactMatch(separator="","")","skos:closeMatch(separator="","")",skos:editorialNote@en,"dct:creator(separator="","")","dct:contributor(separator="","")"

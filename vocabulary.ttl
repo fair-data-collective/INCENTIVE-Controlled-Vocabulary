@@ -4,10 +4,12 @@
 @prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix incentive-vars: <http://purl.org/incentive/variables/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix puv: <https://w3id.org/env/puv> .
 @prefix qb: <http://purl.org/linked-data/cube#> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -17,6 +19,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
 @prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix unit: <http://qudt.org/vocab/unit/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -30,7 +33,7 @@
     <https://orcid.org/0000-0003-3277-3107>, <https://orcid.org/0000-0003-4645-9442>;
   dct:description "Quantitative and qualitative variables describing ..."@en;
   dct:hasVersion "0.1.1"@en;
-  dct:modified "2022-06-04T10:08:26+00:00"@en;
+  dct:modified "2022-06-04T10:17:05+00:00"@en;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "INCENTIVE Project Variables"@en;
   skos:hasTopConcept incentive-vars:1000, incentive-vars:1005, incentive-vars:1007,
@@ -40,7 +43,8 @@
     incentive-vars:1021, incentive-vars:1022, incentive-vars:1023, incentive-vars:1024,
     incentive-vars:1025, incentive-vars:1026, incentive-vars:1027, incentive-vars:1028,
     incentive-vars:1029, incentive-vars:1030, incentive-vars:1031, incentive-vars:1032,
-    incentive-vars:1033, incentive-vars:1034, incentive-vars:1035 .
+    incentive-vars:1033, incentive-vars:1034, incentive-vars:1035;
+  foaf:homepage <https://zenodo.org/communities/incentive/about/> .
 
 incentive-vars:1000 a skos:Concept;
   dct:creator <https://orcid.org/0000-0003-3277-3107>;

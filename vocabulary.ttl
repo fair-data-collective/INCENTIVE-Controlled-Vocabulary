@@ -21,7 +21,6 @@
 @prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix unit: <http://qudt.org/vocab/unit/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix schema: <http://schema.org/>.
 @prefix iop:   <https://w3id.org/iadopt/ont/> .
 @prefix puv: <https://w3id.org/env/puv#> .
@@ -83,7 +82,7 @@ puv:method
   a owl:ObjectProperty ;
   rdfs:comment "method used to measure the value" ;
   rdfs:label "method" ;
-  rdfs:range .
+  rdfs:range puv:Method .
 
 
 sosa:madeBySensor 

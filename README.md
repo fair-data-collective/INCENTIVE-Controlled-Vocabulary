@@ -1,13 +1,13 @@
 <img src="https://zenodo.org/api/files/00000000-0000-0000-0000-000000000000/incentive/logo.jpg" alt="incentive logo" width="300"/>
 
-[![CI](https://github.com/fair-data-collective/M4M18-vocabulary/workflows/Sheet2RDF/badge.svg)](https://github.com/fair-data-collective/M4M18-vocabulary/actions?query=workflow%3ASheet2RDF)
+[![CI](https://github.com/fair-data-collective/INCENTIVE-Controlled-Vocabulary/workflows/Sheet2RDF/badge.svg)](https://github.com/fair-data-collective/INCENTIVE-Controlled-Vocabulary/actions?query=workflow%3ASheet2RDF)
 
-# [INCENTIVE Variables Controlled Vocabulary](http://purl.org/incentive/variables/)
-Controlled vocabularies allow an accurate and controlled approach in describing physical and digital assets (e.g., data). One of such controlled vocabulary is **INCENTIVE Variables**. This controlled vocabulary is a result of Metadata 4 Machine (M4M) Workshop 18 and 22 (M4M.18 and M4M.22) provided to [the INCENTIVE community](https://zenodo.org/communities/incentive/about/). 
+# [INCENTIVE Controlled Vocabulary](http://purl.org/incentive/variables/)
+Controlled vocabularies allow an accurate and controlled approach in describing physical and digital assets (e.g., data). One of such controlled vocabulary is **INCENTIVE Controlled Vocabulary**. This controlled vocabulary is a result of Metadata 4 Machine (M4M) Workshop 18 and 22 (M4M.18 and M4M.22) provided to [the INCENTIVE community](https://zenodo.org/communities/incentive/about/). 
 
-`sheet2rdf` and `OntoStack`, developed by Nikola Vasiljevic, are used to build and serve **INCENTIVE Variable**, while [PURL](https://archive.org/services/purl/), which once configured, will be used to persist identifiers for the vocabulary terms and properties:
+`sheet2rdf` and `OntoStack` are used to build and serve **INCENTIVE Controlled Vocabulary**, while [PURL](https://archive.org/services/purl/) is used to persist identifiers for the vocabulary terms:
 
-   http://purl.org/incentive/variables/
+   http://purl.org/incentive/
 
 
 # Tooling

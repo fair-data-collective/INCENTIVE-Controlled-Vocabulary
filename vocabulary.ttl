@@ -3,7 +3,7 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix incentive-vars: <http://purl.org/incentive/variables/> .
+@prefix incentive: <http://purl.org/incentive/> .
 @prefix iop: <https://w3id.org/iadopt/ont/> .
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -21,11 +21,13 @@
 @prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix schema: <http://schema.org/>.
 @prefix iop:   <https://w3id.org/iadopt/ont/> .
 @prefix puv: <https://w3id.org/env/puv#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
-
 
 iop:constrains  a     owl:ObjectProperty ;
         rdfs:comment  "A Constraint constrains an Entity having a role in the Variable description." ;
@@ -83,8 +85,7 @@ puv:method
   rdfs:comment "method used to measure the value" ;
   rdfs:label "method" ;
   rdfs:range puv:Method .
-
-
+        
 sosa:madeBySensor 
   a owl:ObjectProperty ;
   rdfs:label "made by sensor"@en ;
@@ -95,9 +96,7 @@ sosa:madeBySensor
   owl:inverseOf sosa:madeObservation ;
   rdfs:isDefinedBy sosa: .
 
-
-<http://purl.org/incentive/variables/> a skos:ConceptScheme;
-  dct:created "2021-08-23T16:13+00:00"@en;
+<http://purl.org/incentive> a skos:ConceptScheme;
   dct:creator <https://orcid.org/0000-0001-5323-3180>, <https://orcid.org/0000-0001-6796-6780>,
     <https://orcid.org/0000-0001-8888-635X>, <https://orcid.org/0000-0002-5914-3554>,
     <https://orcid.org/0000-0002-8954-0470>, <https://orcid.org/0000-0002-9346-0190>,
@@ -106,32 +105,26 @@ sosa:madeBySensor
     <https://orcid.org/0000-0003-3277-3107>, <https://orcid.org/0000-0003-4645-9442>;
   dct:description "Quantitative and qualitative variables describing ..."@en;
   dct:hasVersion "0.1.1"@en;
-  dct:modified "2022-06-04T11:26:36+00:00"@en;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
-  dct:title "INCENTIVE Project Variables"@en;
-  skos:hasTopConcept incentive-vars:1000, incentive-vars:1005, incentive-vars:1007,
-    incentive-vars:1009, incentive-vars:1010, incentive-vars:1011, incentive-vars:1012,
-    incentive-vars:1013, incentive-vars:1014, incentive-vars:1015, incentive-vars:1016,
-    incentive-vars:1017, incentive-vars:1018, incentive-vars:1019, incentive-vars:1020,
-    incentive-vars:1021, incentive-vars:1022, incentive-vars:1023, incentive-vars:1024,
-    incentive-vars:1025, incentive-vars:1026, incentive-vars:1027, incentive-vars:1028,
-    incentive-vars:1029, incentive-vars:1030, incentive-vars:1031, incentive-vars:1032,
-    incentive-vars:1033, incentive-vars:1034;
+  dct:title "INCENTIVE Project Controlled Vocabulary"@en;
+  pav:createdOn "2021-08-23T16:13+00:00"@en;
+  pav:lastUpdatedOn "2022-06-25T18:49:33+00:00"@en;
+  skos:hasTopConcept incentive:1000, incentive:1005, incentive:1007, incentive:1009;
   foaf:homepage <https://zenodo.org/communities/incentive/about/> .
 
-incentive-vars:1000 a skos:Concept;
+incentive:1000 a skos:Concept;
   dct:creator <https://orcid.org/0000-0003-3277-3107>;
   skos:definition "levels of IgG subclasses to Flu antigens"@en;
-  skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:narrower incentive-vars:1001, incentive-vars:1002, incentive-vars:1003, incentive-vars:1004;
+  skos:inScheme <http://purl.org/incentive>;
+  skos:narrower incentive:1001, incentive:1002, incentive:1003, incentive:1004;
   skos:prefLabel "IgG Subclasses"@en;
-  skos:topConceptOf <http://purl.org/incentive/variables/> .
+  skos:topConceptOf <http://purl.org/incentive> .
 
-incentive-vars:1001 a skos:Concept;
+incentive:1001 a skos:Concept;
   dct:creator <https://orcid.org/0000-0003-3277-3107>;
-  skos:broader incentive-vars:1000;
+  skos:broader incentive:1000;
   skos:definition "levels of immunoglobulin G-1against HA-1 antigen"@en;
-  skos:inScheme <http://purl.org/incentive/variables/>;
+  skos:inScheme <http://purl.org/incentive>;
   skos:prefLabel "IgG1-HA1"@en;
   sosa:madeBySensor "test"@en;
   puv:statistic "test"@en;
@@ -143,163 +136,63 @@ incentive-vars:1001 a skos:Concept;
   iop:hasObjectOfInterest "test"@en;
   iop:hasProperty "test"@en .
 
-incentive-vars:1002 a skos:Concept;
+incentive:1002 a skos:Concept;
   dct:creator <https://orcid.org/0000-0003-3277-3107>;
-  skos:broader incentive-vars:1000;
+  skos:broader incentive:1000;
   skos:definition "levels of immunoglobulin G-2 against HA-1 antigen"@en;
-  skos:inScheme <http://purl.org/incentive/variables/>;
+  skos:inScheme <http://purl.org/incentive>;
   skos:prefLabel "IgG2-HA1"@en;
   puv:uom "MFI"@en .
 
-incentive-vars:1003 a skos:Concept;
+incentive:1003 a skos:Concept;
   dct:creator <https://orcid.org/0000-0003-3277-3107>;
-  skos:broader incentive-vars:1000;
+  skos:broader incentive:1000;
   skos:definition "levels of immunoglobulin G-3 against HA-1 antigen"@en;
-  skos:inScheme <http://purl.org/incentive/variables/>;
+  skos:inScheme <http://purl.org/incentive>;
   skos:prefLabel "IgG3-HA1"@en;
   puv:uom "MFI"@en .
 
-incentive-vars:1004 a skos:Concept;
+incentive:1004 a skos:Concept;
   dct:creator <https://orcid.org/0000-0003-3277-3107>;
-  skos:broader incentive-vars:1000;
+  skos:broader incentive:1000;
   skos:definition "levels of immunoglobulin G-4 against HA-1 antigen"@en;
-  skos:inScheme <http://purl.org/incentive/variables/>;
+  skos:inScheme <http://purl.org/incentive>;
   skos:prefLabel "IgG4-HA1"@en;
   puv:uom "MFI"@en .
 
-incentive-vars:1005 a skos:Concept;
+incentive:1005 a skos:Concept;
   skos:definition "level of surface antigenexpression"@en;
-  skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:narrower incentive-vars:1006;
+  skos:inScheme <http://purl.org/incentive>;
+  skos:narrower incentive:1006;
   skos:prefLabel "Surface Antigens-FC"@en;
-  skos:topConceptOf <http://purl.org/incentive/variables/>;
+  skos:topConceptOf <http://purl.org/incentive>;
   puv:uom "MFI"@en .
 
-incentive-vars:1006 a skos:Concept;
-  skos:broader incentive-vars:1005;
+incentive:1006 a skos:Concept;
+  skos:broader incentive:1005;
   skos:definition "level of CD3 expression"@en;
-  skos:inScheme <http://purl.org/incentive/variables/>;
+  skos:inScheme <http://purl.org/incentive>;
   skos:prefLabel "CD3"@en;
   puv:uom "MFI"@en .
 
-incentive-vars:1007 a skos:Concept;
+incentive:1007 a skos:Concept;
   skos:definition "level of cytokine expreesion/secretion"@en;
-  skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:narrower incentive-vars:1008;
+  skos:inScheme <http://purl.org/incentive>;
+  skos:narrower incentive:1008;
   skos:prefLabel "Cytokines-FC"@en;
-  skos:topConceptOf <http://purl.org/incentive/variables/>;
+  skos:topConceptOf <http://purl.org/incentive>;
   puv:uom "MFI"@en .
 
-incentive-vars:1008 a skos:Concept;
-  skos:broader incentive-vars:1007;
+incentive:1008 a skos:Concept;
+  skos:broader incentive:1007;
   skos:definition "level of IFNg expression/secretion"@en;
-  skos:inScheme <http://purl.org/incentive/variables/>;
+  skos:inScheme <http://purl.org/incentive>;
   skos:prefLabel "IFNg"@en;
   puv:uom "MFI"@en .
 
-incentive-vars:1009 a skos:Concept;
+incentive:1009 a skos:Concept;
   skos:definition "level of chemokine expression"@en;
-  skos:inScheme <http://purl.org/incentive/variables/>;
+  skos:inScheme <http://purl.org/incentive>;
   skos:prefLabel "Chemokines-FC"@en;
-  skos:topConceptOf <http://purl.org/incentive/variables/>;
+  skos:topConceptOf <http://purl.org/incentive>;
   puv:uom "MFI"@en .
-
-incentive-vars:1010 a skos:Concept;
-  skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:topConceptOf <http://purl.org/incentive/variables/> .
-
-incentive-vars:1011 a skos:Concept;
-  skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:topConceptOf <http://purl.org/incentive/variables/> .
-
-incentive-vars:1012 a skos:Concept;
-  skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:topConceptOf <http://purl.org/incentive/variables/> .
-
-incentive-vars:1013 a skos:Concept;
-  skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:topConceptOf <http://purl.org/incentive/variables/> .
-
-incentive-vars:1014 a skos:Concept;
-  skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:topConceptOf <http://purl.org/incentive/variables/> .
-
-incentive-vars:1015 a skos:Concept;
-  skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:topConceptOf <http://purl.org/incentive/variables/> .
-
-incentive-vars:1016 a skos:Concept;
-  skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:topConceptOf <http://purl.org/incentive/variables/> .
-
-incentive-vars:1017 a skos:Concept;
-  skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:topConceptOf <http://purl.org/incentive/variables/> .
-
-incentive-vars:1018 a skos:Concept;
-  skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:topConceptOf <http://purl.org/incentive/variables/> .
-
-incentive-vars:1019 a skos:Concept;
-  skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:topConceptOf <http://purl.org/incentive/variables/> .
-
-incentive-vars:1020 a skos:Concept;
-  skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:topConceptOf <http://purl.org/incentive/variables/> .
-
-incentive-vars:1021 a skos:Concept;
-  skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:topConceptOf <http://purl.org/incentive/variables/> .
-
-incentive-vars:1022 a skos:Concept;
-  skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:topConceptOf <http://purl.org/incentive/variables/> .
-
-incentive-vars:1023 a skos:Concept;
-  skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:topConceptOf <http://purl.org/incentive/variables/> .
-
-incentive-vars:1024 a skos:Concept;
-  skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:topConceptOf <http://purl.org/incentive/variables/> .
-
-incentive-vars:1025 a skos:Concept;
-  skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:topConceptOf <http://purl.org/incentive/variables/> .
-
-incentive-vars:1026 a skos:Concept;
-  skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:topConceptOf <http://purl.org/incentive/variables/> .
-
-incentive-vars:1027 a skos:Concept;
-  skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:topConceptOf <http://purl.org/incentive/variables/> .
-
-incentive-vars:1028 a skos:Concept;
-  skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:topConceptOf <http://purl.org/incentive/variables/> .
-
-incentive-vars:1029 a skos:Concept;
-  skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:topConceptOf <http://purl.org/incentive/variables/> .
-
-incentive-vars:1030 a skos:Concept;
-  skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:topConceptOf <http://purl.org/incentive/variables/> .
-
-incentive-vars:1031 a skos:Concept;
-  skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:topConceptOf <http://purl.org/incentive/variables/> .
-
-incentive-vars:1032 a skos:Concept;
-  skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:topConceptOf <http://purl.org/incentive/variables/> .
-
-incentive-vars:1033 a skos:Concept;
-  skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:topConceptOf <http://purl.org/incentive/variables/> .
-
-incentive-vars:1034 a skos:Concept;
-  skos:inScheme <http://purl.org/incentive/variables/>;
-  skos:topConceptOf <http://purl.org/incentive/variables/> .

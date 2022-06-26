@@ -31,12 +31,12 @@ dct:creator,https://orcid.org/0000-0001-5323-3180,An ORCID ID of the vocabulary 
 dct:rights,https://spdx.org/licenses/CC0-1.0,License under which the vocabulary is provided
 dct:hasVersion,0.1.1,Vocabulary version
 pav:createdOn,2021-08-23T16:13+00:00,Date when vocabulary was initially created
-pav:lastUpdatedOn,2022-06-25T18:49:33+00:00,Automatic update when vocabulary is updated
+pav:lastUpdatedOn,2022-06-26T01:45:58+00:00,Automatic update when vocabulary is updated
 Definition of terms
 
 Identifier,"skos:prefLabel@en(id=""label"")","skos:altLabel(separator="","")",skos:definition@en,"dct:source(separator="","")","skos:broader(lookupColumn=""skos:prefLabel"" separator="","")","skos:exactMatch(separator="","")","skos:closeMatch(separator="","")",iop:hasProperty,iop:hasObjectOfInterest,iop:hasMatrix,"iop:hasContextObject(separator="","")","iop:hasConstraint(separator="","")","puv:statistic(separator="","")","puv:usesMethod(separator="","")","sosa:madeBySensor(separator="","")","puv:uom(separator="","")",owl:deprecated^^xsd:boolean,skos:editorialNote@en,dct:created^^xsd:date,dct:modified^^xsd:date,"dct:creator(separator="","")","dct:contributor(separator="","")","dct:contributor(separator="","")"
 incentive:1000,IgG Subclasses,,levels of IgG subclasses to Flu antigens,,,,,,,,,,,,,,,,,,https://orcid.org/0000-0003-3277-3107
-incentive:1001,IgG1-HA1,,levels of immunoglobulin G-1against HA-1 antigen,,IgG Subclasses,,,test,test,test,test,test,test,test,test,MFI,,,,,https://orcid.org/0000-0003-3277-3107
+incentive:1001,IgG1-HA1,,levels of immunoglobulin G-1against HA-1 antigen,,IgG Subclasses,,,,http://vocabs.lter-europe.net/EnvThes/30181,test,test,test,test,test,test,MFI,,,,,https://orcid.org/0000-0003-3277-3107
 incentive:1002,IgG2-HA1,,levels of immunoglobulin G-2 against HA-1 antigen,,IgG Subclasses,,,,,,,,,,,MFI,,,,,https://orcid.org/0000-0003-3277-3107
 incentive:1003,IgG3-HA1,,levels of immunoglobulin G-3 against HA-1 antigen,,IgG Subclasses,,,,,,,,,,,MFI,,,,,https://orcid.org/0000-0003-3277-3107
 incentive:1004,IgG4-HA1,,levels of immunoglobulin G-4 against HA-1 antigen,,IgG Subclasses,,,,,,,,,,,MFI,,,,,https://orcid.org/0000-0003-3277-3107
@@ -45,3 +45,4 @@ incentive:1006,CD3,,level of CD3 expression,,Surface Antigens-FC,,,,,,,,,,,MFI
 incentive:1007,Cytokines-FC,,level of cytokine expreesion/secretion,,,,,,,,,,,,,MFI
 incentive:1008,IFNg,,level of IFNg expression/secretion,,Cytokines-FC,,,,,,,,,,,MFI
 incentive:1009,Chemokines-FC,,level of chemokine expression,,,,,,,,,,,,,MFI
+incentive:1010,Avidity of IgG subclass to influenza virus antigen

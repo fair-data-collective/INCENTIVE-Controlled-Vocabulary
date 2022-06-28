@@ -12,6 +12,8 @@ PREFIX,sosa,http://www.w3.org/ns/sosa/,Semantic Sensor Network Ontology
 PREFIX,qudt,http://qudt.org/schema/qudt/,"Prefix for ""Quantity, Unit, Dimension and Type"" schema that is used to model physical units."
 PREFIX,unit,http://qudt.org/vocab/unit/,"Prefix for QUDT Vocabulary of Units which terms we will use to semantically define units of measurements for terms (i.e., variables) we are defining "
 PREFIX,obo,http://purl.obolibrary.org/obo/
+PREFIX,bao,http://www.bioassayontology.org/bao#
+PREFIX,sio,http://semanticscience.org/resource/
 Metadata about vocabulary
 
 dct:title,INCENTIVE Project Controlled Vocabulary,Title of the vocabulary
@@ -21,7 +23,7 @@ dct:creator,https://orcid.org/0000-0003-2195-3997,An ORCID ID of the vocabulary 
 dct:rights,https://spdx.org/licenses/CC0-1.0,License under which the vocabulary is provided
 dct:hasVersion,0.1.1,Vocabulary version
 pav:createdOn,2021-08-23T16:13+00:00,Date when vocabulary was initially created
-pav:lastUpdatedOn,2022-06-28T02:07:26+00:00,Automatic update when vocabulary is updated
+pav:lastUpdatedOn,2022-06-28T03:12:01+00:00,Automatic update when vocabulary is updated
 Definition of terms
 
 Identifier,"skos:prefLabel@en(id=""label"")","skos:altLabel(separator="","")",skos:definition@en,"dct:source(separator="","")","skos:broader(lookupColumn=""skos:prefLabel"" separator="","")","skos:exactMatch(separator="","")","skos:closeMatch(separator="","")",iop:hasProperty,iop:hasObjectOfInterest,iop:hasMatrix,"iop:hasContextObject(separator="","")","iop:hasConstraint(separator="","")","puv:statistic(separator="","")","puv:usesMethod(separator="","")","sosa:madeBySensor(separator="","")","puv:uom(separator="","")",owl:deprecated^^xsd:boolean,skos:editorialNote@en,dct:created^^xsd:date,dct:modified^^xsd:date,"dct:creator(separator="","")","dct:contributor(separator="","")","dct:contributor(separator="","")"
@@ -47,3 +49,60 @@ incentive:1018,vaccine response evaluation,,,,subject
 incentive:1019,biomarker links pre-vaccination response to vaccine response,,,,subject
 obo:OMP_0007632,cell phenotype,,"A microbial phenotype that is observed at the level of an individual cell. This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.",,subject
 obo:OBA_0003194,cell functionality,,The functionality of a cell.,,subject
+incentive:1022,levels IgG1-rHA_C,,levels of immunoglobulin 1 against recombinant hemaglutionin from the strain A/California/04/2009 wt rHA H1 7871,,variable
+incentive:1023,levels IgG1-rHA_C with urea,,levels of immunoglobulin 1 against recombinant hemaglutionin from the strain A/California/04/2009 wt rHA H1 7871 with urea,,variable
+incentive:1024,avidity levels IgG1-rHA_C,,avidity of immunoglobulin 1 against recombinant hemaglutionin from the strain A/California/04/2009 wt rHA H1 7871,,variable
+incentive:1025,levels IgG1-rHA_B,,levels of immunoglobulin 1 against recombinant hemaglutionin from the strain A/Brisbane/02/2018 wt rHA H1 20235 ,,variable
+incentive:1026,levels IgG1-rHA_B with urea,,levels of immunoglobulin 1 against recombinant hemaglutionin from the strain A/Brisbane/02/2018 wt rHA H1 20235 with urea,,variable
+incentive:1027,avidity levels IgG1-rHA_B,,avidity of immunoglobulin 1 against recombinant hemaglutionin from the strain A/Brisbane/02/2018 wt rHA H1 20235 ,,variable
+incentive:1028,relative concentration of lipids in plasma,,,,variable
+incentive:1029,absolute concentration of metablites in plasma,,,,variable
+incentive:1030,relative concentration of proteins in plasma,,,,variable
+incentive:1031,count of reads of RNAs,,,,variable
+incentive:1032,corrected P-value of RNAs,,,,variable
+incentive:1033,fold change of RNAs,,,,variable
+incentive:1034,retention time of lipids in plasma,,,,variable
+incentive:1035,mass to charge of lipids in plasma,,,,variable
+incentive:1036,chemical shift of metabolites in plasma,,,,variable
+incentive:1037,intensity of metabolites in plasma,,,,variable
+incentive:1038,fluorescence of multiple cytokines with luminex,,,,variable
+incentive:1039,fluorescence of multiple cytokines with simoa,,,,variable
+incentive:1040,cytokine concentration,,,,variable
+incentive:1041,average enzyme per beads,,,,variable
+incentive:1042,fluorescence intensity of immune cell populations in human blood samples,,,,variable
+incentive:1043,median fluorescence intensity of antibodies bound to markers on immune cells in human blood samples,,,,variable
+incentive:1044,frequeny of immune cell populations (phenotype and functionality) in human blood samples,,,,variable
+incentive:1045,counts of immune cell populations (phenotype and functionality) in human blood samples,,,,variable
+incentive:1046,fluorescence intensity of antibody bound to soluble factors in human blood samples,,,,variable
+incentive:1047,concentration of soluble factors in human blood samples,,,,variable
+incentive:1048,mean fluorescence intensity of antibody bound to soluble factors in human blood samples,,,,variable
+incentive:1049,property
+obo:MS_1000894,retention time,,A time interval from the start of chromatography when an analyte exits a chromatographic column.,,property
+incentive:1051,retention time of peptides in plasma,,,,variable
+incentive:1052,mass to charge of peptides in plasma,,,,variable
+incentive:1053,intensity of peptides in plasma,,,,variable
+incentive:1054,entity
+bao:BAO_0000175,protein,,"A protein or polypeptide is a long polymer of amino acids joined together by peptide bonds. The sequence of the amino acids is defined by the genetic code. Here, a protein is a perturbagen whereby its ability to modulate a physiological process or a disease pathology is assessed.",,entity
+obo:NCIT_C13356,plasma,,"Plasma is the fluid (noncellular) portion of the circulating blood, as distinguished from the serum that is the fluid portion of the blood obtained by removal of the fibrin clot and blood cells after coagulation.",,entity
+obo:NCIT_C735,peptide,,A compound of two or more amino acids where the alpha carboxyl group of one is bound to the alpha amino group of another.,,entity
+obo:NCIT_C14225,human,,"The bipedal primate mammal, Homo sapiens; belonging to man or mankind; pertaining to man or to the race of man; use of man as experimental subject or unit of analysis in research.
+",,entity
+obo:NCIT_C616,lipid,,"A class of hydrocarbon-containing organic compounds. Lipids are insoluble in water but soluble in nonpolar solvents and play important roles in living organisms: these roles include functioning as energy storage molecules, serving as structural components of cell membranes, and constituting important signaling molecules. Lipids can be subdivided into 2 groups: fatty acids and glycerides.",,entity
+obo:CHEBI_25212,metabolite,,Any intermediate or product resulting from metabolism. The term 'metabolite' subsumes the classes commonly known as primary and secondary metabolites.,,entity
+bao:BAO_0000270,RNA,,"RNA or ribonucleic acid is a polymer of nucleotides with a backbone made of ribose sugar and phosphate groups linked together by ester bonds. RNA has the base uracil instead of thymine, which is present in DNA.",,entity
+obo:NCIT_C12434,blood,,"A liquid tissue; its major function is to transport oxygen throughout the body. It also supplies the tissues with nutrients, removes waste products, and contains various components of the immune system defending the body against infection. Several hormones also travel in the blood.",,entity
+incentive:1063,IgG1-rHA_C,,,,entity
+incentive:1064,IgG1-rHA_B,,,,entity
+incentive:1065,IgG2-rHA_C,,,,entity
+obo:NCIT_C20464,cytokine,,A class of soluble glycoproteins which act nonenzymatically through specific receptors to regulate immune responses. Cytokines are derived from both immune and non-immune cells and are intercellular mediators that differ from hormones in that they are produced by a number of tissue or cell types rather than by specialized glands.,,entity
+obo:NCIT_C16295,antibody,,"A type of protein made by B lymphocytes in response to a foreign substance (antigen). Each antibody only binds to a specific antigen, helping to destroy the antigen directly or by assisting white blood cells to destroy the antigen.",,entity
+obo:NCIT_C16554,enzyme,,"Molecules that catalyze a chemical reaction. They are usually proteins, although catalytic RNA and DNA molecules have been identified.",,entity
+obo:OBI_0001875,cultured immune cell population,,a cultured cell population comprised of a single type of immune system cell,,entity
+obo:NCIT_C25463,count,,Determining the number or amount of something.,,property
+obo:NCIT_C16586,flourescence,,"Fluorescence is a luminescence (i.e., optical phenomenon) in cold bodies, in which a molecule absorbs a high-energy photon, and re-emits it as a lower-energy (longer-wavelength) photon. The energy difference between the absorbed and emitted photons ends up as molecular vibrations (heat).",,property
+incentive:1072,human donor,,,,entity
+obo:NCIT_C163046,mean fluorescence intensity unit,,A unit of measure for the mean fluorescence intensity.,,property
+sio:SIO_001367,frequency,,Frequency is the number of occurrences of a repeating event per unit time,,property
+incentive:1075,constraint
+obo:NCIT_C28385,vaccinated,,A status indicating that an individual has received a vaccination.,,constraint
+obo:PATO_0001161,diluted,,A concentration which relatively low.,,constraint

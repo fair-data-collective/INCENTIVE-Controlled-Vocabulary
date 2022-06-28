@@ -23,7 +23,7 @@ dct:creator,https://orcid.org/0000-0003-2195-3997,An ORCID ID of the vocabulary 
 dct:rights,https://spdx.org/licenses/CC0-1.0,License under which the vocabulary is provided
 dct:hasVersion,0.1.1,Vocabulary version
 pav:createdOn,2021-08-23T16:13+00:00,Date when vocabulary was initially created
-pav:lastUpdatedOn,2022-06-28T06:31:20+00:00,Automatic update when vocabulary is updated
+pav:lastUpdatedOn,2022-06-28T06:38:59+00:00,Automatic update when vocabulary is updated
 Definition of terms
 
 Identifier,"skos:prefLabel@en(id=""label"")","skos:altLabel(separator="","")",skos:definition@en,"dct:source(separator="","")","skos:broader(lookupColumn=""skos:prefLabel"" separator="","")","skos:exactMatch(separator="","")","skos:closeMatch(separator="","")",iop:hasProperty,iop:hasObjectOfInterest,iop:hasMatrix,"iop:hasContextObject(separator="","")","iop:hasConstraint(separator="","")","puv:statistic(separator="","")","puv:usesMethod(separator="","")","sosa:madeBySensor(separator="","")","puv:uom(separator="","")",owl:deprecated^^xsd:boolean,skos:editorialNote@en,dct:created^^xsd:date,dct:modified^^xsd:date,"dct:creator(separator="","")","dct:contributor(separator="","")","dct:contributor(separator="","")"
@@ -74,14 +74,13 @@ incentive:1043,median fluorescence intensity of antibodies bound to markers on i
 incentive:1044,frequeny of immune cell populations (phenotype and functionality) in human blood samples,,,,variable
 incentive:1045,counts of immune cell populations (phenotype and functionality) in human blood samples,,,,variable
 incentive:1046,fluorescence intensity of antibody bound to soluble factors in human blood samples,,,,variable
-incentive:1047,concentration of soluble factors in human blood samples,,,,variable
-incentive:1048,mean fluorescence intensity of antibody bound to soluble factors in human blood samples,,,,variable
-incentive:1049,property
+incentive:1047,mean fluorescence intensity of antibody bound to soluble factors in human blood samples,,,,variable
+incentive:1048,property
 obo:MS_1000894,retention time,,A time interval from the start of chromatography when an analyte exits a chromatographic column.,,property
-incentive:1051,retention time of peptides in plasma,,,,variable
-incentive:1052,mass to charge of peptides in plasma,,,,variable
-incentive:1053,intensity of peptides in plasma,,,,variable
-incentive:1054,entity
+incentive:1050,retention time of peptides in plasma,,,,variable
+incentive:1051,mass to charge of peptides in plasma,,,,variable
+incentive:1052,intensity of peptides in plasma,,,,variable
+incentive:1053,entity
 bao:BAO_0000175,protein,,"A protein or polypeptide is a long polymer of amino acids joined together by peptide bonds. The sequence of the amino acids is defined by the genetic code. Here, a protein is a perturbagen whereby its ability to modulate a physiological process or a disease pathology is assessed.",,entity
 obo:NCIT_C13356,plasma,,"Plasma is the fluid (noncellular) portion of the circulating blood, as distinguished from the serum that is the fluid portion of the blood obtained by removal of the fibrin clot and blood cells after coagulation.",,entity
 obo:NCIT_C735,peptide,,A compound of two or more amino acids where the alpha carboxyl group of one is bound to the alpha amino group of another.,,entity
@@ -91,22 +90,22 @@ obo:NCIT_C616,lipid,,"A class of hydrocarbon-containing organic compounds. Lipid
 obo:CHEBI_25212,metabolite,,Any intermediate or product resulting from metabolism. The term 'metabolite' subsumes the classes commonly known as primary and secondary metabolites.,,entity
 bao:BAO_0000270,RNA,,"RNA or ribonucleic acid is a polymer of nucleotides with a backbone made of ribose sugar and phosphate groups linked together by ester bonds. RNA has the base uracil instead of thymine, which is present in DNA.",,entity
 obo:NCIT_C12434,blood,,"A liquid tissue; its major function is to transport oxygen throughout the body. It also supplies the tissues with nutrients, removes waste products, and contains various components of the immune system defending the body against infection. Several hormones also travel in the blood.",,entity
-incentive:1063,IgG1-rHA_C,,,,entity
-incentive:1064,IgG1-rHA_B,,,,entity
-incentive:1065,IgG2-rHA_C,,,,entity
+incentive:1062,IgG1-rHA_C,,,,entity
+incentive:1063,IgG1-rHA_B,,,,entity
+incentive:1064,IgG2-rHA_C,,,,entity
 obo:NCIT_C20464,cytokine,,A class of soluble glycoproteins which act nonenzymatically through specific receptors to regulate immune responses. Cytokines are derived from both immune and non-immune cells and are intercellular mediators that differ from hormones in that they are produced by a number of tissue or cell types rather than by specialized glands.,,entity
 obo:NCIT_C16295,antibody,,"A type of protein made by B lymphocytes in response to a foreign substance (antigen). Each antibody only binds to a specific antigen, helping to destroy the antigen directly or by assisting white blood cells to destroy the antigen.",,entity
 obo:NCIT_C16554,enzyme,,"Molecules that catalyze a chemical reaction. They are usually proteins, although catalytic RNA and DNA molecules have been identified.",,entity
 obo:OBI_0001875,cultured immune cell population,,a cultured cell population comprised of a single type of immune system cell,,entity
 obo:NCIT_C25463,count,,Determining the number or amount of something.,,property
 obo:NCIT_C16586,flourescence,,"Fluorescence is a luminescence (i.e., optical phenomenon) in cold bodies, in which a molecule absorbs a high-energy photon, and re-emits it as a lower-energy (longer-wavelength) photon. The energy difference between the absorbed and emitted photons ends up as molecular vibrations (heat).",,property
-incentive:1072,human donor,,,,entity
+incentive:1071,human donor,,,,entity
 obo:NCIT_C163046,mean fluorescence intensity unit,,A unit of measure for the mean fluorescence intensity.,,property
 sio:SIO_001367,frequency,,Frequency is the number of occurrences of a repeating event per unit time,,property
-incentive:1075,constraint
+incentive:1074,constraint
 obo:NCIT_C28385,vaccinated,,A status indicating that an individual has received a vaccination.,,constraint
 obo:PATO_0001161,diluted,,A concentration which relatively low.,,constraint
 obo:NCIT_C25554,level,,"A position on a scale measuring intensity, quality, or amount.",,property
 obo:NCIT_C37987,alive,,Showing characteristics of life; displaying signs of life.,,constraint
-incentive:1080,concentration of soluble factors in human blood samples,,,,variable,,,sio:SIO_001088,obo:NCIT_C20464,obo:NCIT_C12434,incentive:1072,obo:NCIT_C28385
+incentive:1079,concentration of soluble factors in human blood samples,,,,variable,,,sio:SIO_001088,obo:NCIT_C20464,obo:NCIT_C12434,incentive:1072,obo:NCIT_C28385
 sio:SIO_001088,concentration,,concentration is the amount of substance per unit volume of a solution,,property

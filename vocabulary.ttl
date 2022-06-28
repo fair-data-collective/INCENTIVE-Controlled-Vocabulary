@@ -106,7 +106,7 @@ sosa:madeBySensor
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "INCENTIVE Project Controlled Vocabulary"@en;
   pav:createdOn "2021-08-23T16:13+00:00"@en;
-  pav:lastUpdatedOn "2022-06-28T03:15:41+00:00"@en;
+  pav:lastUpdatedOn "2022-06-28T06:31:20+00:00"@en;
   skos:hasTopConcept incentive:1000, incentive:1001, incentive:1011, incentive:1049,
     incentive:1054, incentive:1075;
   foaf:homepage <https://zenodo.org/communities/incentive/about/> .
@@ -125,7 +125,7 @@ incentive:1001 a skos:Concept;
     incentive:1033, incentive:1034, incentive:1035, incentive:1036, incentive:1037, incentive:1038,
     incentive:1039, incentive:1040, incentive:1041, incentive:1042, incentive:1043, incentive:1044,
     incentive:1045, incentive:1046, incentive:1047, incentive:1048, incentive:1051, incentive:1052,
-    incentive:1053;
+    incentive:1053, incentive:1080;
   skos:prefLabel "variable"@en;
   skos:topConceptOf <http://purl.org/incentive> .
 
@@ -391,7 +391,7 @@ incentive:1048 a skos:Concept;
 incentive:1049 a skos:Concept;
   skos:inScheme <http://purl.org/incentive>;
   skos:narrower obo:MS_1000894, obo:NCIT_C163046, obo:NCIT_C16586, obo:NCIT_C25463,
-    obo:NCIT_C25554, sio:SIO_001367;
+    obo:NCIT_C25554, sio:SIO_001088, sio:SIO_001367;
   skos:prefLabel "property"@en;
   skos:topConceptOf <http://purl.org/incentive> .
 
@@ -542,7 +542,7 @@ sio:SIO_001367 a skos:Concept;
 
 incentive:1075 a skos:Concept;
   skos:inScheme <http://purl.org/incentive>;
-  skos:narrower obo:NCIT_C28385, obo:PATO_0001161;
+  skos:narrower obo:NCIT_C28385, obo:NCIT_C37987, obo:PATO_0001161;
   skos:prefLabel "constraint"@en;
   skos:topConceptOf <http://purl.org/incentive> .
 
@@ -563,3 +563,25 @@ obo:NCIT_C25554 a skos:Concept;
   skos:definition "A position on a scale measuring intensity, quality, or amount."@en;
   skos:inScheme <http://purl.org/incentive>;
   skos:prefLabel "level"@en .
+
+obo:NCIT_C37987 a skos:Concept;
+  skos:broader incentive:1075;
+  skos:definition "Showing characteristics of life; displaying signs of life."@en;
+  skos:inScheme <http://purl.org/incentive>;
+  skos:prefLabel "alive"@en .
+
+incentive:1080 a skos:Concept;
+  skos:broader incentive:1001;
+  skos:inScheme <http://purl.org/incentive>;
+  skos:prefLabel "concentration of soluble factors in human blood samples"@en;
+  iop:hasConstraint obo:NCIT_C28385;
+  iop:hasContextObject incentive:1072;
+  iop:hasMatrix obo:NCIT_C12434;
+  iop:hasObjectOfInterest obo:NCIT_C20464;
+  iop:hasProperty sio:SIO_001088 .
+
+sio:SIO_001088 a skos:Concept;
+  skos:broader incentive:1049;
+  skos:definition "concentration is the amount of substance per unit volume of a solution"@en;
+  skos:inScheme <http://purl.org/incentive>;
+  skos:prefLabel "concentration"@en .

@@ -106,7 +106,7 @@ sosa:madeBySensor
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "INCENTIVE Project Controlled Vocabulary"@en;
   pav:createdOn "2021-08-23T16:13+00:00"@en;
-  pav:lastUpdatedOn "2022-06-28T03:12:01+00:00"@en;
+  pav:lastUpdatedOn "2022-06-28T03:15:41+00:00"@en;
   skos:hasTopConcept incentive:1000, incentive:1001, incentive:1011, incentive:1049,
     incentive:1054, incentive:1075;
   foaf:homepage <https://zenodo.org/communities/incentive/about/> .
@@ -391,7 +391,7 @@ incentive:1048 a skos:Concept;
 incentive:1049 a skos:Concept;
   skos:inScheme <http://purl.org/incentive>;
   skos:narrower obo:MS_1000894, obo:NCIT_C163046, obo:NCIT_C16586, obo:NCIT_C25463,
-    sio:SIO_001367;
+    obo:NCIT_C25554, sio:SIO_001367;
   skos:prefLabel "property"@en;
   skos:topConceptOf <http://purl.org/incentive> .
 
@@ -557,3 +557,9 @@ obo:PATO_0001161 a skos:Concept;
   skos:definition "A concentration which relatively low."@en;
   skos:inScheme <http://purl.org/incentive>;
   skos:prefLabel "diluted"@en .
+
+obo:NCIT_C25554 a skos:Concept;
+  skos:broader incentive:1049;
+  skos:definition "A position on a scale measuring intensity, quality, or amount."@en;
+  skos:inScheme <http://purl.org/incentive>;
+  skos:prefLabel "level"@en .

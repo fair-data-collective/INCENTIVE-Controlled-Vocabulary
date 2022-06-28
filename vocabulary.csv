@@ -11,38 +11,39 @@ https://github.com/nvs-vocabs/P01."
 PREFIX,sosa,http://www.w3.org/ns/sosa/,Semantic Sensor Network Ontology
 PREFIX,qudt,http://qudt.org/schema/qudt/,"Prefix for ""Quantity, Unit, Dimension and Type"" schema that is used to model physical units."
 PREFIX,unit,http://qudt.org/vocab/unit/,"Prefix for QUDT Vocabulary of Units which terms we will use to semantically define units of measurements for terms (i.e., variables) we are defining "
+PREFIX,obo,http://purl.obolibrary.org/obo/
 Metadata about vocabulary
 
 dct:title,INCENTIVE Project Controlled Vocabulary,Title of the vocabulary
 dct:description,Quantitative and qualitative variables describing ...,Description of the controlled vocabulary
 foaf:homepage,https://zenodo.org/communities/incentive/about/ ,Home page of community creating vocabulary
-dct:creator,https://orcid.org/0000-0002-9381-9693,An ORCID ID of the vocabulary creator
-dct:creator,https://orcid.org/0000-0003-3277-3107,An ORCID ID of the vocabulary creator
-dct:creator,https://orcid.org/0000-0003-4645-9442,An ORCID ID of the vocabulary creator
-dct:creator,https://orcid.org/0000-0002-9719-9161,An ORCID ID of the vocabulary creator
-dct:creator,https://orcid.org/0000-0002-9346-0190,An ORCID ID of the vocabulary creator
-dct:creator,https://orcid.org/0000-0002-8954-0470,An ORCID ID of the vocabulary creator
-dct:creator,https://orcid.org/0000-0001-8888-635X,An ORCID ID of the vocabulary creator
-dct:creator,https://orcid.org/0000-0003-1352-9213,An ORCID ID of the vocabulary creator
-dct:creator,https://orcid.org/0000-0001-6796-6780,An ORCID ID of the vocabulary creator
-dct:creator,https://orcid.org/0000-0002-9432-4297,An ORCID ID of the vocabulary creator
-dct:creator,https://orcid.org/0000-0002-5914-3554,An ORCID ID of the vocabulary creator
-dct:creator,https://orcid.org/0000-0001-5323-3180,An ORCID ID of the vocabulary creator
+dct:creator,https://orcid.org/0000-0003-2195-3997,An ORCID ID of the vocabulary creator
 dct:rights,https://spdx.org/licenses/CC0-1.0,License under which the vocabulary is provided
 dct:hasVersion,0.1.1,Vocabulary version
 pav:createdOn,2021-08-23T16:13+00:00,Date when vocabulary was initially created
-pav:lastUpdatedOn,2022-06-26T01:45:58+00:00,Automatic update when vocabulary is updated
+pav:lastUpdatedOn,2022-06-28T02:07:26+00:00,Automatic update when vocabulary is updated
 Definition of terms
 
 Identifier,"skos:prefLabel@en(id=""label"")","skos:altLabel(separator="","")",skos:definition@en,"dct:source(separator="","")","skos:broader(lookupColumn=""skos:prefLabel"" separator="","")","skos:exactMatch(separator="","")","skos:closeMatch(separator="","")",iop:hasProperty,iop:hasObjectOfInterest,iop:hasMatrix,"iop:hasContextObject(separator="","")","iop:hasConstraint(separator="","")","puv:statistic(separator="","")","puv:usesMethod(separator="","")","sosa:madeBySensor(separator="","")","puv:uom(separator="","")",owl:deprecated^^xsd:boolean,skos:editorialNote@en,dct:created^^xsd:date,dct:modified^^xsd:date,"dct:creator(separator="","")","dct:contributor(separator="","")","dct:contributor(separator="","")"
-incentive:1000,IgG Subclasses,,levels of IgG subclasses to Flu antigens,,,,,,,,,,,,,,,,,,https://orcid.org/0000-0003-3277-3107
-incentive:1001,IgG1-HA1,,levels of immunoglobulin G-1against HA-1 antigen,,IgG Subclasses,,,,http://vocabs.lter-europe.net/EnvThes/30181,test,test,test,test,test,test,MFI,,,,,https://orcid.org/0000-0003-3277-3107
-incentive:1002,IgG2-HA1,,levels of immunoglobulin G-2 against HA-1 antigen,,IgG Subclasses,,,,,,,,,,,MFI,,,,,https://orcid.org/0000-0003-3277-3107
-incentive:1003,IgG3-HA1,,levels of immunoglobulin G-3 against HA-1 antigen,,IgG Subclasses,,,,,,,,,,,MFI,,,,,https://orcid.org/0000-0003-3277-3107
-incentive:1004,IgG4-HA1,,levels of immunoglobulin G-4 against HA-1 antigen,,IgG Subclasses,,,,,,,,,,,MFI,,,,,https://orcid.org/0000-0003-3277-3107
-incentive:1005,Surface Antigens-FC,,level of surface antigenexpression,,,,,,,,,,,,,MFI
-incentive:1006,CD3,,level of CD3 expression,,Surface Antigens-FC,,,,,,,,,,,MFI
-incentive:1007,Cytokines-FC,,level of cytokine expreesion/secretion,,,,,,,,,,,,,MFI
-incentive:1008,IFNg,,level of IFNg expression/secretion,,Cytokines-FC,,,,,,,,,,,MFI
-incentive:1009,Chemokines-FC,,level of chemokine expression,,,,,,,,,,,,,MFI
-incentive:1010,Avidity of IgG subclass to influenza virus antigen
+incentive:1000,assay
+incentive:1001,variable
+obo:OBI_0002145,antigen specific antibodies assay,,An analyte assay that measures the presence or amount of antibodies to a specified antigen.,,assay
+incentive:1003,quantitative suspension multiplex assay to measure IgG subclasses and avidity to influenza virus antigens ,,multiplex assay that measures the amount and avidity of a specific IgG subclass to several influenza virus antigens,,antigen specific antibodies assay
+obo:OBI_0003097,liquid chromatography mass spectrometry assay,,A mass spectrometry assay where a sample mixture is first separated by liquid chromatography before being converted into ions which are characterized by using mass spectrometry based on their mass-to-charge ratio and relative abundance.,,assay
+obo:OBI_0003229,plasma proteomics assay,,A proteomics profiling assay that detects proteins in a blood plasma specimen.,,assay
+obo:OBI_0001271,RNA-seq assay,,An RNA sequencing assay that determines an RNA sequence by analyzing the transcibed regions of the genome and or to quantitate transcript abundance.,,assay
+obo:ERO_0000637,multiplex bead-based assay,,"A molecular assay that permits the simultaneous measurement of an array of proteins in a single, small volume sample.",,assay
+incentive:1004,singleplex bead-based assay,,A type of solid-phase multiplex assay that uses microbeads coated with recombinant or infinity purified antigens from a single allele for the detection and identification of an antibody that would bind and react to this antigen.,https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C130182,assay
+obo:OBI_0000916,flow cytometry assay,,"A cytometry assay in which an input cell population is put in solution, is passed by a laser, and optical sensors are used to detect scattering of the laser light and/or fluorescence of specific markers to count and characterize the particles in solution.",,assay
+obo:OBI_0000920,cytometric bead array assay,,"An analyte assay in which a series of beads coated with antibodies, antigens, or other small molecules are used to detect an analyte of interest.",,assay
+incentive:1011,subject
+incentive:1012,antibody crossreactivity between vaccine antigens ,,,,subject
+incentive:1013,functionality of vaccine induced antibodies,,,,subject
+incentive:1014,antibodies as biomarkers of vaccine protection,,,,subject
+obo:CHEBI_59163,biomarker,,A substance used as an indicator of a biological state.,,subject
+obo:NCIT_C131144,immunoresponse,,"A marked decrease in contrast enhancement that is not due to actual tumor shrinkage, but that may be due to immunotherapy.",,subject
+obo:NCIT_C54680,mechanism of action,,The mechanism by which a pharmacologically active substance produces an effect on a living organism or in a biochemical system.,,subject
+incentive:1018,vaccine response evaluation,,,,subject
+incentive:1019,biomarker links pre-vaccination response to vaccine response,,,,subject
+obo:OMP_0007632,cell phenotype,,"A microbial phenotype that is observed at the level of an individual cell. This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.",,subject
+obo:OBA_0003194,cell functionality,,The functionality of a cell.,,subject

@@ -5,6 +5,7 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix incentive: <http://purl.org/incentive/> .
 @prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix pav: <http://purl.org/pav/> .
@@ -97,107 +98,142 @@ sosa:madeBySensor
   rdfs:isDefinedBy sosa: .
 
 <http://purl.org/incentive> a skos:ConceptScheme;
-  dct:creator <https://orcid.org/0000-0001-5323-3180>, <https://orcid.org/0000-0001-6796-6780>,
-    <https://orcid.org/0000-0001-8888-635X>, <https://orcid.org/0000-0002-5914-3554>,
-    <https://orcid.org/0000-0002-8954-0470>, <https://orcid.org/0000-0002-9346-0190>,
-    <https://orcid.org/0000-0002-9381-9693>, <https://orcid.org/0000-0002-9432-4297>,
-    <https://orcid.org/0000-0002-9719-9161>, <https://orcid.org/0000-0003-1352-9213>,
-    <https://orcid.org/0000-0003-3277-3107>, <https://orcid.org/0000-0003-4645-9442>;
+  dct:creator <https://orcid.org/0000-0003-2195-3997>;
   dct:description "Quantitative and qualitative variables describing ..."@en;
   dct:hasVersion "0.1.1"@en;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "INCENTIVE Project Controlled Vocabulary"@en;
   pav:createdOn "2021-08-23T16:13+00:00"@en;
-  pav:lastUpdatedOn "2022-06-26T01:45:58+00:00"@en;
-  skos:hasTopConcept incentive:1000, incentive:1005, incentive:1007, incentive:1009,
-    incentive:1010;
+  pav:lastUpdatedOn "2022-06-28T02:07:26+00:00"@en;
+  skos:hasTopConcept incentive:1000, incentive:1001, incentive:1011;
   foaf:homepage <https://zenodo.org/communities/incentive/about/> .
 
 incentive:1000 a skos:Concept;
-  dct:creator <https://orcid.org/0000-0003-3277-3107>;
-  skos:definition "levels of IgG subclasses to Flu antigens"@en;
   skos:inScheme <http://purl.org/incentive>;
-  skos:narrower incentive:1001, incentive:1002, incentive:1003, incentive:1004;
-  skos:prefLabel "IgG Subclasses"@en;
+  skos:narrower obo:ERO_0000637, obo:OBI_0000916, obo:OBI_0000920, obo:OBI_0001271,
+    obo:OBI_0002145, obo:OBI_0003097, obo:OBI_0003229, incentive:1004;
+  skos:prefLabel "assay"@en;
   skos:topConceptOf <http://purl.org/incentive> .
 
 incentive:1001 a skos:Concept;
-  dct:creator <https://orcid.org/0000-0003-3277-3107>;
-  skos:broader incentive:1000;
-  skos:definition "levels of immunoglobulin G-1against HA-1 antigen"@en;
   skos:inScheme <http://purl.org/incentive>;
-  skos:prefLabel "IgG1-HA1"@en;
-  sosa:madeBySensor "test"@en;
-  puv:statistic "test"@en;
-  puv:uom "MFI"@en;
-  puv:usesMethod "test"@en;
-  iop:hasConstraint "test"@en;
-  iop:hasContextObject "test"@en;
-  iop:hasMatrix "test"@en;
-  iop:hasObjectOfInterest <http://vocabs.lter-europe.net/EnvThes/30181> .
+  skos:prefLabel "variable"@en;
+  skos:topConceptOf <http://purl.org/incentive> .
 
-incentive:1002 a skos:Concept;
-  dct:creator <https://orcid.org/0000-0003-3277-3107>;
+obo:OBI_0002145 a skos:Concept;
   skos:broader incentive:1000;
-  skos:definition "levels of immunoglobulin G-2 against HA-1 antigen"@en;
+  skos:definition "An analyte assay that measures the presence or amount of antibodies to a specified antigen."@en;
   skos:inScheme <http://purl.org/incentive>;
-  skos:prefLabel "IgG2-HA1"@en;
-  puv:uom "MFI"@en .
+  skos:narrower incentive:1003;
+  skos:prefLabel "antigen specific antibodies assay"@en .
 
 incentive:1003 a skos:Concept;
-  dct:creator <https://orcid.org/0000-0003-3277-3107>;
-  skos:broader incentive:1000;
-  skos:definition "levels of immunoglobulin G-3 against HA-1 antigen"@en;
+  skos:broader obo:OBI_0002145;
+  skos:definition "multiplex assay that measures the amount and avidity of a specific IgG subclass to several influenza virus antigens"@en;
   skos:inScheme <http://purl.org/incentive>;
-  skos:prefLabel "IgG3-HA1"@en;
-  puv:uom "MFI"@en .
+  skos:prefLabel "quantitative suspension multiplex assay to measure IgG subclasses and avidity to influenza virus antigens"@en .
+
+obo:OBI_0003097 a skos:Concept;
+  skos:broader incentive:1000;
+  skos:definition "A mass spectrometry assay where a sample mixture is first separated by liquid chromatography before being converted into ions which are characterized by using mass spectrometry based on their mass-to-charge ratio and relative abundance."@en;
+  skos:inScheme <http://purl.org/incentive>;
+  skos:prefLabel "liquid chromatography mass spectrometry assay"@en .
+
+obo:OBI_0003229 a skos:Concept;
+  skos:broader incentive:1000;
+  skos:definition "A proteomics profiling assay that detects proteins in a blood plasma specimen."@en;
+  skos:inScheme <http://purl.org/incentive>;
+  skos:prefLabel "plasma proteomics assay"@en .
+
+obo:OBI_0001271 a skos:Concept;
+  skos:broader incentive:1000;
+  skos:definition "An RNA sequencing assay that determines an RNA sequence by analyzing the transcibed regions of the genome and or to quantitate transcript abundance."@en;
+  skos:inScheme <http://purl.org/incentive>;
+  skos:prefLabel "RNA-seq assay"@en .
+
+obo:ERO_0000637 a skos:Concept;
+  skos:broader incentive:1000;
+  skos:definition "A molecular assay that permits the simultaneous measurement of an array of proteins in a single, small volume sample."@en;
+  skos:inScheme <http://purl.org/incentive>;
+  skos:prefLabel "multiplex bead-based assay"@en .
 
 incentive:1004 a skos:Concept;
-  dct:creator <https://orcid.org/0000-0003-3277-3107>;
+  dct:source <https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C130182>;
   skos:broader incentive:1000;
-  skos:definition "levels of immunoglobulin G-4 against HA-1 antigen"@en;
+  skos:definition "A type of solid-phase multiplex assay that uses microbeads coated with recombinant or infinity purified antigens from a single allele for the detection and identification of an antibody that would bind and react to this antigen."@en;
   skos:inScheme <http://purl.org/incentive>;
-  skos:prefLabel "IgG4-HA1"@en;
-  puv:uom "MFI"@en .
+  skos:prefLabel "singleplex bead-based assay"@en .
 
-incentive:1005 a skos:Concept;
-  skos:definition "level of surface antigenexpression"@en;
+obo:OBI_0000916 a skos:Concept;
+  skos:broader incentive:1000;
+  skos:definition "A cytometry assay in which an input cell population is put in solution, is passed by a laser, and optical sensors are used to detect scattering of the laser light and/or fluorescence of specific markers to count and characterize the particles in solution."@en;
   skos:inScheme <http://purl.org/incentive>;
-  skos:narrower incentive:1006;
-  skos:prefLabel "Surface Antigens-FC"@en;
-  skos:topConceptOf <http://purl.org/incentive>;
-  puv:uom "MFI"@en .
+  skos:prefLabel "flow cytometry assay"@en .
 
-incentive:1006 a skos:Concept;
-  skos:broader incentive:1005;
-  skos:definition "level of CD3 expression"@en;
+obo:OBI_0000920 a skos:Concept;
+  skos:broader incentive:1000;
+  skos:definition "An analyte assay in which a series of beads coated with antibodies, antigens, or other small molecules are used to detect an analyte of interest."@en;
   skos:inScheme <http://purl.org/incentive>;
-  skos:prefLabel "CD3"@en;
-  puv:uom "MFI"@en .
+  skos:prefLabel "cytometric bead array assay"@en .
 
-incentive:1007 a skos:Concept;
-  skos:definition "level of cytokine expreesion/secretion"@en;
+incentive:1011 a skos:Concept;
   skos:inScheme <http://purl.org/incentive>;
-  skos:narrower incentive:1008;
-  skos:prefLabel "Cytokines-FC"@en;
-  skos:topConceptOf <http://purl.org/incentive>;
-  puv:uom "MFI"@en .
-
-incentive:1008 a skos:Concept;
-  skos:broader incentive:1007;
-  skos:definition "level of IFNg expression/secretion"@en;
-  skos:inScheme <http://purl.org/incentive>;
-  skos:prefLabel "IFNg"@en;
-  puv:uom "MFI"@en .
-
-incentive:1009 a skos:Concept;
-  skos:definition "level of chemokine expression"@en;
-  skos:inScheme <http://purl.org/incentive>;
-  skos:prefLabel "Chemokines-FC"@en;
-  skos:topConceptOf <http://purl.org/incentive>;
-  puv:uom "MFI"@en .
-
-incentive:1010 a skos:Concept;
-  skos:inScheme <http://purl.org/incentive>;
-  skos:prefLabel "Avidity of IgG subclass to influenza virus antigen"@en;
+  skos:narrower obo:CHEBI_59163, obo:NCIT_C131144, obo:NCIT_C54680, obo:OBA_0003194,
+    obo:OMP_0007632, incentive:1012, incentive:1013, incentive:1014, incentive:1018, incentive:1019;
+  skos:prefLabel "subject"@en;
   skos:topConceptOf <http://purl.org/incentive> .
+
+incentive:1012 a skos:Concept;
+  skos:broader incentive:1011;
+  skos:inScheme <http://purl.org/incentive>;
+  skos:prefLabel "antibody crossreactivity between vaccine antigens"@en .
+
+incentive:1013 a skos:Concept;
+  skos:broader incentive:1011;
+  skos:inScheme <http://purl.org/incentive>;
+  skos:prefLabel "functionality of vaccine induced antibodies"@en .
+
+incentive:1014 a skos:Concept;
+  skos:broader incentive:1011;
+  skos:inScheme <http://purl.org/incentive>;
+  skos:prefLabel "antibodies as biomarkers of vaccine protection"@en .
+
+obo:CHEBI_59163 a skos:Concept;
+  skos:broader incentive:1011;
+  skos:definition "A substance used as an indicator of a biological state."@en;
+  skos:inScheme <http://purl.org/incentive>;
+  skos:prefLabel "biomarker"@en .
+
+obo:NCIT_C131144 a skos:Concept;
+  skos:broader incentive:1011;
+  skos:definition "A marked decrease in contrast enhancement that is not due to actual tumor shrinkage, but that may be due to immunotherapy."@en;
+  skos:inScheme <http://purl.org/incentive>;
+  skos:prefLabel "immunoresponse"@en .
+
+obo:NCIT_C54680 a skos:Concept;
+  skos:broader incentive:1011;
+  skos:definition "The mechanism by which a pharmacologically active substance produces an effect on a living organism or in a biochemical system."@en;
+  skos:inScheme <http://purl.org/incentive>;
+  skos:prefLabel "mechanism of action"@en .
+
+incentive:1018 a skos:Concept;
+  skos:broader incentive:1011;
+  skos:inScheme <http://purl.org/incentive>;
+  skos:prefLabel "vaccine response evaluation"@en .
+
+incentive:1019 a skos:Concept;
+  skos:broader incentive:1011;
+  skos:inScheme <http://purl.org/incentive>;
+  skos:prefLabel "biomarker links pre-vaccination response to vaccine response"@en .
+
+obo:OMP_0007632 a skos:Concept;
+  skos:broader incentive:1011;
+  skos:definition "A microbial phenotype that is observed at the level of an individual cell. This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype."@en;
+  skos:inScheme <http://purl.org/incentive>;
+  skos:prefLabel "cell phenotype"@en .
+
+obo:OBA_0003194 a skos:Concept;
+  skos:broader incentive:1011;
+  skos:definition "The functionality of a cell."@en;
+  skos:inScheme <http://purl.org/incentive>;
+  skos:prefLabel "cell functionality"@en .
